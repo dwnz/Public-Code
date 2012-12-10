@@ -1,0 +1,13 @@
+c:\users\daniel\documents\visual studio 2012\Projects\TradmeAuth\TradmeAuth\bin\Debug\resources.pri
+c:\users\daniel\documents\visual studio 2012\Projects\TradmeAuth\TradmeAuth\bin\Debug\AppxManifest.xml
+c:\users\daniel\documents\visual studio 2012\Projects\TradmeAuth\TradmeAuth\bin\Debug\TradmeAuth.build.appxrecipe
+c:\users\daniel\documents\visual studio 2012\Projects\TradmeAuth\TradmeAuth\bld\Debug\priconfig.xml.intermediate
+c:\users\daniel\documents\visual studio 2012\Projects\TradmeAuth\TradmeAuth\bld\Debug\layout.resfiles.intermediate
+c:\users\daniel\documents\visual studio 2012\Projects\TradmeAuth\TradmeAuth\bld\Debug\resources.resfiles.intermediate
+c:\users\daniel\documents\visual studio 2012\Projects\TradmeAuth\TradmeAuth\bld\Debug\pri.resfiles.intermediate
+c:\users\daniel\documents\visual studio 2012\Projects\TradmeAuth\TradmeAuth\bld\Debug\priconfig.xml
+c:\users\daniel\documents\visual studio 2012\Projects\TradmeAuth\TradmeAuth\bld\Debug\layout.resfiles
+c:\users\daniel\documents\visual studio 2012\Projects\TradmeAuth\TradmeAuth\bld\Debug\resources.resfiles
+c:\users\daniel\documents\visual studio 2012\Projects\TradmeAuth\TradmeAuth\bld\Debug\pri.resfiles
+c:\users\daniel\documents\visual studio 2012\Projects\TradmeAuth\TradmeAuth\bld\Debug\LanguageQualifiers.txt
+c:\users\daniel\documents\visual studio 2012\Projects\TradmeAuth\TradmeAuth\bld\Debug\ProjectArchitectures.txt
