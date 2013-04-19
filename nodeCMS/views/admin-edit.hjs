@@ -1,0 +1,90 @@
+<html>
+	<head>
+		<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet">
+	    <style>
+	    	body {
+	    		padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+    		}
+    	</style>
+    	
+    	<title>nodeCMS - Edit Page</title>
+    	
+     	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    	<script src="/codemirror-3.11/lib/codemirror.js"></script>
+		<link rel="stylesheet" href="/codemirror-3.11/lib/codemirror.css">
+		
+		<script type="text/javascript" src="/codemirror-3.11/mode/xml/xml.js"></script>
+		<script type="text/javascript" src="/codemirror-3.11/mode/javascript/javascript.js"></script>
+		<script type="text/javascript" src="/codemirror-3.11/mode/css/css.js"></script>
+		<script type="text/javascript" src="/codemirror-3.11/mode/htmlmixed/htmlmixed.js"></script>   	
+	</head>
+	<body>
+		<div class="navbar navbar-inverse navbar-fixed-top">
+			<div class="navbar-inner">
+				<div class="container">
+					<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+
+					<a class="brand" href="/admin">nodeCMS</a>
+					<div class="nav-collapse collapse">
+						<ul class="nav">
+							<li><a href="/admin">Dashboard</a></li>
+							<li class="active"><a href="/admin/pages">Pages</a></li>
+							<li><a href="/admin/template">Template</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="container">
+			<form method="post">
+				<div class="control-group">
+					<div class="controls">
+						<input type="text" placeholder="Page name" name="name" value="{{ name }}" />
+					</div>
+				</div>
+
+				<div class="control-group">
+					<div class="controls">
+						<input type="text" placeholder="Page URL" name="url" value="{{ url }}" />
+					</div>
+				</div>
+				
+				<div class="control-group">
+					<label>Page Type</label>
+					<div class="controls">
+						<select name="type">
+							<option value="html">HTML</option>
+							<option value="json">JSON</option>
+						</select>	
+					</div>
+				</div>
+				
+				<div class="control-group">
+					<div class="controls">
+						<textarea class="span12" style="height: 400px" id="content" name="content">{{ content }}</textarea>
+					</div>
+				</div>
+				
+				<div class="form-actions">
+					<a class="btn btn-danger" href="/admin/pages/delete/{{ name}}">Delete</a>
+					<input class="btn pull-right" value="Save" type="submit" />
+				</div>
+			</form>
+		</div>
+		
+		<script type="text/javascript">
+			$(function(){
+				CodeMirror.fromTextArea(document.getElementById('content'), {
+	                lineNumbers: true,
+	                mode: 'text/html',
+	                lineWrapping: true
+	            });
+			});
+		</script>		
+	</body>
+</html>	
